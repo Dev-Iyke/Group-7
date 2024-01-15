@@ -1,12 +1,95 @@
 @import url("./components/navbar.css");
 @import url("./components/footer.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
 /* container styles */
 #container {
   padding-inline: 1rem;
 }
+/* features Section starts*/
+.feature {
+  display: flex;
+  background-color: #FEF7E0;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 90px;
+  gap: 4rem;
 
+}
+.feature .left {
+  width: 50%;
+  height: 80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.feature .left  h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.73px;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 20px;
+  width: 381px;
+}
+.feature .left  p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 24px;
+  padding-bottom: 20px;
+  width: 381px;
+}
+.feature .left  .butn {
+  background-color: #202020;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #E5E7EB;
+  border-radius: 7.97px;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-self: flex-start;
+  font-family: "Manrope", sans-serif;
+}
+.feature .right {
+  width: 60%;
+  height: 80%;
+  background-position: center;
+  border-radius: 20px;
+}
+
+/* features Section ends */
+
+
+/* smaller screen styles */
+@media screen and (max-width: 640px) {
+  .feature {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 30px 0px;
+  }
+  .feature .left {
+    width: 90%;
+    height: 50%;
+    padding: 0px 5px;
+  }
+  .feature .right {
+    width: 90%;
+    height: 50%;
+  }
+  .feature .left  h3 {
+    font-size: 22px;
+    line-height: 30.73px;
+    width: 95%;
+  }
+  .feature .left p {
+    font-size: 14px;
+  line-height: 23px;    
+  width: 95%;
+  }
+
+}
 /* larger screen styles */
 @media screen and (min-width: 1024px) {
   #container {
