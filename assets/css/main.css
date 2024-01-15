@@ -1,0 +1,10 @@
+@import url("reset.css");
+@import url("index.css");
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
