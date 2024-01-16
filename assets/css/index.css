@@ -1,21 +1,94 @@
 @import url("./components/navbar.css");
 @import url("./components/footer.css");
+@import url("./components/social.css");
+@import url("./components/feature-card.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
 
 /* container styles */
-#container {
+.navbar,
+.hero,
+main,
+footer {
   padding-inline: 1rem;
 }
 
+.navbar,
+footer {
+  background: #ffffff;
+}
+.hero,
+main {
+  background: #f8f8f8;
+}
+
+.navbar {
+  margin-block: 0.5rem;
+  /* padding-block: 0.75rem; */
+}
+
+/* hero section styles */
 .hero {
-  margin-top: 2rem;
+  padding-top: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.56rem;
+  gap: 2rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 2.32rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.top > h1 {
+  color: #202124;
+  font-family: "Inter", sans-serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.218rem;
+}
+
+.top > h1 > span {
+  background: linear-gradient(
+    94deg,
+    #f9ac9b 5.97%,
+    #e66885 24.14%,
+    #b735f9 43.81%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top > p {
+  color: #1e1e1e;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.49506rem; /* 149.504% */
+}
+
+.hero__content > .navbtn {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .hero__image {
+  border: 1px solid #f9ac9b;
+  box-shadow: 0px 3.48px 13.052px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
   width: 100%;
 }
 
@@ -77,7 +150,7 @@
 /* smaller screen styles */
 @media screen and (max-width: 640px) {
   .feature {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 3rem;
     padding: 30px 0px;
   }
@@ -101,4 +174,117 @@
     width: 95%;
   }
 }
+
+/* footer styles */
+.footer {
+  margin-block: 0.625rem;
+  padding: 5.3rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  align-content: space-between;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer .social {
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.footer .social-icons {
+  gap: 0.5rem;
+}
+
+.useful-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.company,
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
 /* larger screen styles */
+@media screen and (min-width: 1024px) {
+  .navbar,
+  .hero,
+  main,
+  footer {
+    padding-inline: 6.25rem;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero__content {
+    text-align: left;
+  }
+
+  .top {
+    align-items: flex-start;
+  }
+  .top > h1 {
+    font-size: 4rem;
+  }
+  .hero__content > a.navbtn {
+    padding: 0.625rem 1.125rem;
+    font-size: 0.99669rem;
+    align-self: flex-start;
+  }
+
+  .banner {
+    border-radius: 1.435rem;
+    background: #1e1e1e;
+    padding: 3.5rem 6.5rem;
+  }
+
+  .banner > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .banner > div > p {
+    width: 30.47669rem;
+    color: #fff;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 3.58744rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.30494rem; /* 120% */
+    letter-spacing: -0.07475rem;
+  }
+  .banner__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .banner__container div {
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.0065rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.38394rem; /* 137.5% */
+  }
+
+  .footer {
+    padding-inline: 6.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    justify-content: space-between;
+  }
+}

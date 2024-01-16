@@ -1,10 +1,9 @@
 .social {
+  order: 3;
   padding: 0.5rem 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   border-radius: 5.43819rem;
   background: #fff;
   box-shadow: 0px 3.48px 13.052px 0px rgba(0, 0, 0, 0.05);
@@ -19,15 +18,29 @@
 
 .social-icons {
   display: flex;
-  gap: 1.12rem;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons > img:last-of-type {
+  display: none;
 }
 
 /* larger screen styles */
 @media screen and (min-width: 768px) {
   .social {
-    gap: 1rem;
+    order: -1;
     padding: 0.625rem 1.25rem;
     flex-direction: row;
+    justify-content: space-around;
     gap: 1rem;
+  }
+  .social-icons {
+    gap: 1.125rem;
+  }
+
+  .social-icons > img:last-of-type {
+    display: block;
   }
 }
