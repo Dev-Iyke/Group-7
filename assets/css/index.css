@@ -21,6 +21,10 @@ main {
   background: #f8f8f8;
 }
 
+main {
+  padding-bottom: 10rem;
+}
+
 .navbar {
   margin-block: 0.5rem;
   /* padding-block: 0.75rem; */
@@ -90,6 +94,10 @@ main {
   box-shadow: 0px 3.48px 13.052px 0px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   width: 100%;
+}
+
+.banner {
+  margin: 4rem 0 0;
 }
 
 /* features Section starts*/
