@@ -175,43 +175,6 @@ main {
   }
 }
 
-/* footer styles */
-.footer {
-  margin-block: 0.625rem;
-  padding: 5.3rem 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: start;
-  align-content: space-between;
-}
-
-.brand {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer .social {
-  justify-content: space-around;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
-.footer .social-icons {
-  gap: 0.5rem;
-}
-
-.useful-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.company,
-.products {
-  display: flex;
-  flex-direction: column;
-}
-
 /* larger screen styles */
 @media screen and (min-width: 1024px) {
   .navbar,
@@ -279,12 +242,5 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 1.38394rem; /* 137.5% */
-  }
-
-  .footer {
-    padding-inline: 6.25rem;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: stretch;
-    justify-content: space-between;
   }
 }
