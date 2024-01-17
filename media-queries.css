@@ -2,5 +2,54 @@
 /* medium screens */
 @media (max-width: 768px) {
 
+  .frame-111 {
+    width: 90%;
+  }
+
+  .heading > h3 {
+    font-size: 46px;
+    line-height: normal;
+    width: 566px;
+  }
+
+  .frame-110 {
+    gap: 30px;
+  }
+}
+
+/* small screens */
+@media (max-width: 320px) {
+  .frame-111 {
+    width: 95%;
+    gap: 10px;
+  }
   
+  .heading > h3 {
+    font-size: 30px;
+    line-height: normal; 
+    width: auto;
+  }
+  
+  .frame-110 {
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .frame-110 > .card {
+    border-radius: 15px;
+  }
+  
+  .frame-110 > .card > .text-section {
+    padding: 10px 0;
+    align-self: center;
+  } 
+  
+  .frame-110 > .card > .text-section > h3 {
+    font-size: 20px;
+    text-align: center;
+  } 
+  
+  .frame-110 > .card > .image-section > img {
+    border-radius: 10px;
+  }
 } 
