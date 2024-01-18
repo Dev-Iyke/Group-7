@@ -1,0 +1,133 @@
+.cta {
+  padding: 3.25rem 3.87rem;
+  border-radius: 1.25rem;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta p:first-of-type {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.611rem; /* 130.55% */
+}
+
+.cta p:last-of-type {
+  margin-top: 0.88rem;
+  margin-bottom: 1.19rem;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.74069rem; /* 174.067% */
+}
+
+.cta a {
+  padding: 0.79781rem 1.79869rem 0.79781rem 1.81319rem;
+  border-radius: 725.20725rem;
+  border: 1.16px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.01538rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cta-image-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-image-container img {
+  margin-left: -1.66075rem;
+}
+
+.merchandise {
+  margin-top: 4.73rem;
+}
+
+.merchandise h2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Inter", sans-serif;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.59419rem; /* 98.827% */
+}
+
+.grid-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5625rem;
+}
+
+.grid-container > div {
+  display: flex;
+  padding: 2.01775rem 2.1595rem 2.01769rem 1.153rem;
+  justify-content: space-between;
+  border-radius: 1.153rem;
+}
+
+.grid-container > div > p {
+  color: #444746;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.135rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7295rem; /* 152.381% */
+}
+
+.one {
+  background: #d3e3fd;
+}
+.two {
+  background: #e3e3e3;
+}
+.three {
+  background: #c2e7ff;
+}
+.four {
+  background: #c4eed0;
+}
+.five {
+  background: #d5d1ff;
+}
+.six {
+  background: #fde3ff;
+}
+.seven {
+  background: #eeffbe;
+}
+.eight {
+  background-color: #ffe1e1;
+}
+
+/* mobile screen styles */
+@media screen and (max-width: 640px) {
+  .cta {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .cta-image-container {
+    justify-content: center;
+  }
+
+  .cta-image-container img {
+    margin-left: -0.98rem;
+    width: 25%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

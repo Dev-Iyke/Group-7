@@ -1,7 +1,11 @@
 @import url("./components/navbar.css");
+@import url("./components/cta.css");
+@import url("./components/course.css");
 @import url("./components/footer.css");
 @import url("./components/social.css");
 @import url("./components/feature-card.css");
+@import url("./components/motivation.css");
+@import url("./components/team.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
 
 /* container styles */
@@ -22,6 +26,7 @@ main {
 }
 
 main {
+  padding-top: 3rem;
   padding-bottom: 10rem;
 }
 
@@ -102,6 +107,7 @@ main {
 
 /* features Section starts*/
 .feature {
+  margin-top: 5.62rem;
   display: flex;
   background-color: #fef7e0;
   border-radius: 20px;

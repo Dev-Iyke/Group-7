@@ -1,5 +1,5 @@
-@import url("reset.css");
-@import url("index.css");
+@import url("./reset.css");
+@import url("./index.css");
 
 .hidden {
   display: none;
