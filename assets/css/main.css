@@ -1,5 +1,11 @@
+/* reset file import */
 @import url("./reset.css");
+
+/* index style import */
 @import url("./index.css");
+
+/* font style import */
+@import url("./font.css");
 
 .hidden {
   display: none;

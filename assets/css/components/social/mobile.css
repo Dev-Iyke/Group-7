@@ -26,21 +26,3 @@
 .social-icons > img:last-of-type {
   display: none;
 }
-
-/* larger screen styles */
-@media screen and (min-width: 768px) {
-  .social {
-    order: -1;
-    padding: 0.625rem 1.25rem;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 1rem;
-  }
-  .social-icons {
-    gap: 1.125rem;
-  }
-
-  .social-icons > img:last-of-type {
-    display: block;
-  }
-}

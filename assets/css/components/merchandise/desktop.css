@@ -1,0 +1,60 @@
+.merchandise {
+  margin-top: 4.73rem;
+}
+
+.merchandise h2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Inter", sans-serif;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.59419rem; /* 98.827% */
+}
+
+.grid-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5625rem;
+}
+
+.grid-container > div {
+  display: flex;
+  padding: 2.01775rem 2.1595rem 2.01769rem 1.153rem;
+  justify-content: space-between;
+  border-radius: 1.153rem;
+}
+
+.grid-container > div > p {
+  color: #444746;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.135rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7295rem; /* 152.381% */
+}
+
+.one {
+  background: #d3e3fd;
+}
+.two {
+  background: #e3e3e3;
+}
+.three {
+  background: #c2e7ff;
+}
+.four {
+  background: #c4eed0;
+}
+.five {
+  background: #d5d1ff;
+}
+.six {
+  background: #fde3ff;
+}
+.seven {
+  background: #eeffbe;
+}
+.eight {
+  background-color: #ffe1e1;
+}

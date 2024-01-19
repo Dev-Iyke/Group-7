@@ -1,0 +1,11 @@
+@media screen and (max-width: 640px) {
+  .course-portal {
+    text-align: center;
+  }
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+  .card-header div p:first-child {
+    font-size: 1rem;
+  }
+}

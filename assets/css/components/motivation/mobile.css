@@ -1,0 +1,9 @@
+@media screen and (max-width: 640px) {
+  .motivation {
+    grid-template-columns: 1fr;
+  }
+  .card > div:first-child,
+  .white-sheep > div:first-child {
+    padding: 1rem;
+  }
+}

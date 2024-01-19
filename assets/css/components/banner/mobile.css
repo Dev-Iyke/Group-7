@@ -1,0 +1,15 @@
+@media screen and (max-width: 840px) {
+  .banner {
+    padding: 2rem 1rem;
+  }
+  .banner__container {
+    flex-direction: column;
+  }
+  .banner > div > p {
+    line-height: normal;
+    font-size: 2rem;
+  }
+  .banner__container div {
+    text-align: center;
+  }
+}

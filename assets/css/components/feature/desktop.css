@@ -1,7 +1,6 @@
 .feature-card {
   margin-top: 3rem;
   border-radius: 1.25rem;
-  background: #f6ecff;
   padding: 2.36888rem 2.25rem 2.52775rem 3.75rem;
   display: flex;
   justify-content: center;
@@ -58,13 +57,14 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .feature-card {
-    padding: 2rem 1rem;
-    gap: 2rem;
-    flex-direction: column-reverse;
-  }
-  .card-image > img {
-    width: 100%;
-  }
+.comic {
+  background: #fef7e0;
+}
+
+.books {
+  background: #edefff;
+  flex-direction: row-reverse;
+}
+.flash-cards {
+  background: #f6ecff;
 }

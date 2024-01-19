@@ -1,12 +1,54 @@
-@import url("./components/navbar.css");
-@import url("./components/cta.css");
-@import url("./components/course.css");
-@import url("./components/footer.css");
-@import url("./components/social.css");
-@import url("./components/feature-card.css");
-@import url("./components/motivation.css");
-@import url("./components/team.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+/* component styles import */
+
+/* header */
+
+/* navbar */
+@import url("./components/header/navbar/mobile.css");
+@import url("./components/header/navbar/desktop.css");
+/* hero */
+@import url("./components/header/hero/mobile.css");
+@import url("./components/header/hero/desktop.css");
+
+/* social */
+@import url("./components/social/mobile.css");
+@import url("./components/social/desktop.css");
+
+/* addon */
+@import url("./components/header/addon/desktop.css");
+@import url("./components/header/addon/mobile.css");
+
+/* main */
+
+/* cta */
+@import url("./components/cta/desktop.css");
+@import url("./components/cta/mobile.css");
+/* concepts */
+@import url("./components/concept/desktop.css");
+@import url("./components/concept/mobile.css");
+/* merchandise */
+@import url("./components/merchandise/desktop.css");
+@import url("./components/merchandise/mobile.css");
+/* features */
+@import url("./components/feature/desktop.css");
+@import url("./components/feature/mobile.css");
+
+/* team */
+@import url("./components/team/desktop.css");
+@import url("./components/team/mobile.css");
+/* course portal */
+@import url("./components/course/desktop.css");
+@import url("./components/course/mobile.css");
+/* motivation */
+@import url("./components/motivation/desktop.css");
+@import url("./components/motivation/mobile.css");
+/* banner */
+@import url("./components/banner/desktop.css");
+@import url("./components/banner/mobile.css");
+
+/* footer */
+
+@import url("./components/footer/mobile.css");
+@import url("./components/footer/desktop.css");
 
 /* container styles */
 .navbar,
@@ -21,7 +63,8 @@ footer {
   background: #ffffff;
 }
 .hero,
-main {
+main,
+.cta-container {
   background: #f8f8f8;
 }
 
@@ -35,226 +78,15 @@ main {
   /* padding-block: 0.75rem; */
 }
 
-/* hero section styles */
-.hero {
-  padding-top: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.hero__content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 2.32rem;
-}
-
-.top {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.top > h1 {
-  color: #202124;
-  font-family: "Inter", sans-serif;
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.218rem;
-}
-
-.top > h1 > span {
-  background: linear-gradient(
-    94deg,
-    #f9ac9b 5.97%,
-    #e66885 24.14%,
-    #b735f9 43.81%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.top > p {
-  color: #1e1e1e;
-  font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.49506rem; /* 149.504% */
-}
-
-.hero__content > .navbtn {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1rem;
-}
-
-.hero__image {
-  border: 1px solid #f9ac9b;
-  box-shadow: 0px 3.48px 13.052px 0px rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  width: 100%;
-}
-
 .banner {
   margin: 4rem 0 0;
 }
 
-/* features Section starts*/
-.feature {
-  margin-top: 5.62rem;
-  display: flex;
-  background-color: #fef7e0;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 90px;
-  gap: 4rem;
-}
-
-.feature .left {
-  width: 50%;
-  height: 80%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.feature .left h3 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38.73px;
-  font-family: "Inter", sans-serif;
-  padding-bottom: 20px;
-  width: 381px;
-}
-.feature .left p {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Work Sans", sans-serif;
-  line-height: 24px;
-  padding-bottom: 20px;
-  width: 381px;
-}
-.feature .left .butn {
-  background-color: #202020;
-  padding: 10px 18px;
-  text-decoration: none;
-  color: #e5e7eb;
-  border-radius: 7.97px;
-  font-weight: 600;
-  font-size: 15px;
-  display: flex;
-  align-self: flex-start;
-  font-family: "Manrope", sans-serif;
-}
-.feature .right {
-  width: 60%;
-  height: 80%;
-  background-position: center;
-  border-radius: 20px;
-}
-
-/* features Section ends */
-
-/* smaller screen styles */
-@media screen and (max-width: 640px) {
-  .feature {
-    flex-direction: column-reverse;
-    gap: 3rem;
-    padding: 30px 0px;
-  }
-  .feature .left {
-    width: 90%;
-    height: 50%;
-    padding: 0px 5px;
-  }
-  .feature .right {
-    width: 90%;
-    height: 50%;
-  }
-  .feature .left h3 {
-    font-size: 22px;
-    line-height: 30.73px;
-    width: 95%;
-  }
-  .feature .left p {
-    font-size: 14px;
-    line-height: 23px;
-    width: 95%;
-  }
-}
-
-/* larger screen styles */
 @media screen and (min-width: 1024px) {
   .navbar,
   .hero,
   main,
   footer {
     padding-inline: 6.25rem;
-  }
-
-  .hero {
-    flex-direction: row;
-  }
-
-  .hero__content {
-    text-align: left;
-  }
-
-  .top {
-    align-items: flex-start;
-  }
-  .top > h1 {
-    font-size: 4rem;
-  }
-  .hero__content > a.navbtn {
-    padding: 0.625rem 1.125rem;
-    font-size: 0.99669rem;
-    align-self: flex-start;
-  }
-
-  .banner {
-    border-radius: 1.435rem;
-    background: #1e1e1e;
-    padding: 3.5rem 6.5rem;
-  }
-
-  .banner > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  .banner > div > p {
-    width: 30.47669rem;
-    color: #fff;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 3.58744rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 4.30494rem; /* 120% */
-    letter-spacing: -0.07475rem;
-  }
-  .banner__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-  }
-
-  .banner__container div {
-    color: #fff;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.0065rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.38394rem; /* 137.5% */
   }
 }
