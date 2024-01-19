@@ -1,0 +1,91 @@
+/*Creating responsive pages with flexbox*/
+
+.frame-111 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  gap: 42px;
+}
+
+.frame-111 > h3 {
+  text-align: center;
+  color: #202124;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.31888rem; /* 107.972% */
+  letter-spacing: -0.075rem;
+}
+
+.frame-110 {
+  display: flex;
+  gap: 40px 62px;
+  flex-wrap: wrap;
+}
+
+.frame-110 > .card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  background: #ff564c;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  flex: 45%;
+  height: auto;
+}
+
+.frame-110 > .card > .text-section {
+  width: 200px;
+  padding: 40px 0 30px 0;
+}
+
+.frame-110 > .card > .text-section > h3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.frame-110 > .card > .image-section > img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#two {
+  background-color: #e8f0fe;
+}
+#two h3 {
+  color: #000;
+}
+#three {
+  background-color: #f1f1f1;
+}
+#three h3 {
+  color: #000;
+}
+#four {
+  background-color: #7021d5;
+}
+#four h3 {
+  color: #fff;
+}
+#five {
+  background-color: #1a73e8;
+}
+#five h3 {
+  color: #fff;
+  width: 240px;
+}
+#six {
+  background-color: #e8f0fe;
+}
+#six h3 {
+  color: #000;
+}

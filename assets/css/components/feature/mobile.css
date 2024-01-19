@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  .feature-card {
+    padding: 2rem 1rem;
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+  .card-image > img {
+    width: 100%;
+  }
+  .books {
+    flex-direction: column-reverse;
+  }
+}

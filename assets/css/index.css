@@ -1,0 +1,92 @@
+/* component styles import */
+
+/* header */
+
+/* navbar */
+@import url("./components/header/navbar/mobile.css");
+@import url("./components/header/navbar/desktop.css");
+/* hero */
+@import url("./components/header/hero/mobile.css");
+@import url("./components/header/hero/desktop.css");
+
+/* social */
+@import url("./components/social/mobile.css");
+@import url("./components/social/desktop.css");
+
+/* addon */
+@import url("./components/header/addon/desktop.css");
+@import url("./components/header/addon/mobile.css");
+
+/* main */
+
+/* cta */
+@import url("./components/cta/desktop.css");
+@import url("./components/cta/mobile.css");
+/* concepts */
+@import url("./components/concept/desktop.css");
+@import url("./components/concept/mobile.css");
+/* merchandise */
+@import url("./components/merchandise/desktop.css");
+@import url("./components/merchandise/mobile.css");
+/* features */
+@import url("./components/feature/desktop.css");
+@import url("./components/feature/mobile.css");
+
+/* team */
+@import url("./components/team/desktop.css");
+@import url("./components/team/mobile.css");
+/* course portal */
+@import url("./components/course/desktop.css");
+@import url("./components/course/mobile.css");
+/* motivation */
+@import url("./components/motivation/desktop.css");
+@import url("./components/motivation/mobile.css");
+/* banner */
+@import url("./components/banner/desktop.css");
+@import url("./components/banner/mobile.css");
+
+/* footer */
+
+@import url("./components/footer/mobile.css");
+@import url("./components/footer/desktop.css");
+
+/* container styles */
+.navbar,
+.hero,
+main,
+footer {
+  padding-inline: 1rem;
+}
+
+.navbar,
+footer {
+  background: #ffffff;
+}
+.hero,
+main,
+.cta-container {
+  background: #f8f8f8;
+}
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+
+.navbar {
+  margin-block: 0.5rem;
+  /* padding-block: 0.75rem; */
+}
+
+.banner {
+  margin: 4rem 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar,
+  .hero,
+  main,
+  footer {
+    padding-inline: 6.25rem;
+  }
+}

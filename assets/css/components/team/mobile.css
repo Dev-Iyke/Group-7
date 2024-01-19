@@ -1,0 +1,10 @@
+@media screen and (max-width: 640px) {
+  .team {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .team div:first-child {
+    text-align: center;
+  }
+}

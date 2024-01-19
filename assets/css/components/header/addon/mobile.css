@@ -1,0 +1,8 @@
+@media screen and (max-width: 840px) {
+  .flex-container {
+    flex-direction: column;
+    margin-inline: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+}
