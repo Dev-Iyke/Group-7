@@ -33,6 +33,7 @@ The list of contributors who participated in this project.
 | **Abdulsalam Baruwa**        | _Maintainer_  | [dmystical-coder](https://github.com/dmystical-coder) |
 | **Obasi Ikechukwu Thompson** | _Contributor_ | [Thomwize](https://github.com/Thomwize)               |
 | **Natasha Peters-Okocha**    | _Contributor_ | [Natashafreckles](https://github.com/Natashafreckles) |
+| **Mitchelle Ongutubor**      | _Contributor_ | [Mitchellemichael](https://github.com/mitchelle-michael) |
 
 # How to contribute
 
