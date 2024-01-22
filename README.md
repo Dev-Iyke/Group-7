@@ -31,7 +31,7 @@ The list of contributors who participated in this project.
 | Name                         | Role          | GitHub profile                                        |
 | ---------------------------- | ------------- | ----------------------------------------------------- |
 | **Abdulsalam Baruwa**        | _Maintainer_  | [dmystical-coder](https://github.com/dmystical-coder) |
-| **Obasi Ikechukwu Thompson** | _Contributor_ | [Thomwize](https://github.com/Thomwize)               |
+| **Obasi Ikechukwu Thompson** | _Contributor_ | [Dev-Iyke](https://github.com/Dev-Iyke)               |
 | **Natasha Peters-Okocha**    | _Contributor_ | [Natashafreckles](https://github.com/Natashafreckles) |
 
 # How to contribute
